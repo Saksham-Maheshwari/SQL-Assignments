@@ -1,0 +1,42 @@
+1) Write a query which fetches and displays all the trainers who don’t have an
+email.
+Sol:
+SELECT Trainer_Name
+from Trainer_Info WHERE email not in (‘Trainer_Email’);
+2) Write a query which displays the id, name, track and location of all trainers
+who has Experience > 4 years.
+Sol:
+SELECT Trainer_ID, Trainer_Name, Trainer_Track, Trainer_Location
+FROM Trainer_Info;
+WHERE Trainer_Experience>4;
+3) Select all the modules whose duration > 200.
+Sol:
+SELECT Module_Name
+FROM Module_Info;
+WHERE Module_Duration>200;
+4) Display the trainer Id, trainer name whose trainer qualification is not
+‘Bachelor of Technology’.
+Sol:
+SELECT Trainer_ID, Trainer_Name
+from Trainer_Info
+WHERE Trainer_Qualification not in (Bachelor of Technology’);
+5) Select all the modules whose duration is in the range 200 and 300.
+Sol:
+SELECT Module_ID, Module_Name
+FROM Module_Info
+WHERE Module_Duration BETWEEN 200 AND 300;
+6) Display the trainer Id, trainer name whose first name starts with ‘M’
+Sol:
+SELECT Trainer_ID, Trainer_Name
+From Trainer_Info
+WHERE Trainer_Name LIKE 'M%';
+7) Display the trainer Id, trainer name whose first name has a character ‘O’
+Sol:
+SELECT Trainer_ID, Trainer_Name
+From Trainer_Info
+WHERE Trainer_Name LIKE ‘O%’
+8) Display the names of all the modules where the module name is not null.
+Sol:
+SELECT Module_Name
+ FROM Module_Info
+WHERE Module_Name IS NOT NULL
